@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wild Exotic</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            background:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)),
+                url("foto1.jpg") center/cover no-repeat;
+        }
+
+        header h1 {
+            font-size: 60px;
+            letter-spacing: 5px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 22px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            font-size: 19px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #080808;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 40px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>WILD EXOTIC</h1>
+        <p>Vitajte na našej stránke</p>
+    </div>
+</header>
+
+<section>
+    <h2>O nás</h2>
+
+    <div class="about">
+        <p>
+            Vitajte na stránke Wild Exotic.
+            Sem si môžete napísať text o sebe,
+            o vašej práci alebo o tom, čomu sa venujete.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Galéria</h2>
+
+    <div class="gallery">
+        <img src="foto1.jpg" alt="Wild Exotic">
+        <img src="foto2.jpg" alt="Wild Exotic">
+        <img src="foto3.jpg" alt="Wild Exotic">
+        <img src="foto4.jpg" alt="Wild Exotic">
+    </div>
+</section>
+
+<section>
+    <h2>Kontakt</h2>
+
+    <div class="contact">
+        <p>Telefón: <a href="tel:+421900000000">+421 900 000 000</a></p>
+        <p>E-mail: <a href="mailto:info@wildexotic.sk">info@wildexotic.sk</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Wild Exotic
+</footer>
+
+</body>
+</html>
